@@ -17,9 +17,9 @@ Relatório do Projeto:
 * [Comentários adicionais](#comentários-adicionais)  
 
 ## Integrantes
+ - Arthur Grillo Queiroz Cabral  | Número USP: 12690500
  - Rafael Corona  |  Número USP: 4769989
  - coloquem o nome e nusp de vcs
- -  
  -
  -
  
