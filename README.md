@@ -18,6 +18,7 @@ Relatório do Projeto:
 
 ## Integrantes
  - Arthur Grillo Queiroz Cabral  | Número USP: 12690500
+ - Érica Ribeiro F. dos Santos   | Número USP: 11836351
  - Rafael Corona  |  Número USP: 4769989
  - coloquem o nome e nusp de vcs
  -
