@@ -11,6 +11,15 @@ import {
     Errors,
 } from "./styles.js";
 
+function saveUserData(data) {
+    console.log("Antes: " + localStorage.getItem("userData"));
+
+    var jsonString = JSON.stringify(data);
+    localStorage.setItem("userData", jsonString);
+
+    console.log("Depois: " + localStorage.getItem("userData"));
+}
+
 function Cadastro() {
     const router = useRouter();
     const [values, setValues] = useState({
@@ -26,6 +35,7 @@ function Cadastro() {
     let errorsNum = 0;
 
     const signUpHandler = async (event) => {
+        console.log(errorsNum)
         event.preventDefault()
         setFormErrors(validate(values));
         if (errorsNum === 0) {
@@ -37,22 +47,23 @@ function Cadastro() {
                 password: values.psw,
             }
 
+            saveUserData(data);
 
-            const jsonData = JSON.stringify(data)
-
-            const endpoint = '/api/cadastro'
-
-            const options = {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: jsonData
-            }
-
-            const response = await fetch(endpoint, options)
-
-            const result = await response.json()
-
-            router.push("/login");
+            /* const jsonData = JSON.stringify(data) */
+            /**/
+            /* const endpoint = '/api/cadastro' */
+            /**/
+            /* const options = { */
+            /*     method: 'POST', */
+            /*     headers: { 'Content-Type': 'application/json' }, */
+            /*     body: jsonData */
+            /* } */
+            /**/
+            /* const response = await fetch(endpoint, options) */
+            /**/
+            /* const result = await response.json() */
+            /**/
+            /* router.push("/login"); */
         }
 
     }
@@ -94,7 +105,7 @@ function Cadastro() {
             <Header />
 
             <div className={styles.container}>
-                <form action="/" method="POST" onSubmit={signUpHandler} className={styles.signup_form}>
+                <form action="/" method="POST" onSubmit={(e) => signUpHandler(e)} className={styles.signup_form}>
                     <div>
                         <h3>
                             <FontBold>Crie sua conta</FontBold>
