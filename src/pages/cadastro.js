@@ -11,13 +11,16 @@ import {
     Errors,
 } from "./styles.js";
 
-function saveUserData(data) {
-    console.log("Antes: " + localStorage.getItem("userData"));
+function saveUserData(user) {
+    let users = JSON.parse(localStorage.getItem("userData")) || {};
 
-    var jsonString = JSON.stringify(data);
-    localStorage.setItem("userData", jsonString);
+    users = {
+        ...users,
+        [user.name]: user
+    }
 
-    console.log("Depois: " + localStorage.getItem("userData"));
+    localStorage.setItem("userData", JSON.stringify(users));
+    console.log(JSON.parse(localStorage.getItem("userData")));
 }
 
 function Cadastro() {
@@ -39,7 +42,7 @@ function Cadastro() {
         event.preventDefault()
         setFormErrors(validate(values));
         if (errorsNum === 0) {
-            const data = {
+            const user = {
                 name: values.name,
                 cpf: values.cpf,
                 telefone: values.telefone,
@@ -47,7 +50,7 @@ function Cadastro() {
                 password: values.psw,
             }
 
-            saveUserData(data);
+            saveUserData(user);
 
             /* const jsonData = JSON.stringify(data) */
             /**/
