@@ -4,7 +4,6 @@
     align-items: center;
     background-color: var(--orange);
     color: var(--white);
-    padding: 0px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,6 +12,8 @@
 .link {
     color: var(--white) !important;
     text-decoration: none !important;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .h1 {
@@ -27,6 +28,7 @@
 .icon {
     font-size: 400%;
     padding-right: 10%;
+    margin-right: 10%;
     cursor: pointer;
 }
 

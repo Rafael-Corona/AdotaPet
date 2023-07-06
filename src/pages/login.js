@@ -1,7 +1,11 @@
 import HomeHeader from '../components/home_header';
+import { useRouter } from 'next/router'
+
 import styles from './login.module.css'
 
 function Login() {
+	const router = useRouter()
+
 	const handleSubmit = async (event) => {
 		event.preventDefault()
 
@@ -26,6 +30,10 @@ function Login() {
 		const response = await fetch(endpoint, options)
 
 		const result = await response.json()
+
+		console.log(result)
+
+		router.push(result.userName + '/info')
 	}
 
 	return (

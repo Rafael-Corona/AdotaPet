@@ -1,11 +1,14 @@
-import Header from '../components/header';
+import Header from '../../components/header';
 import styles from './match.module.css';
 import { AiOutlineCheck } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import Image from 'next/image';
+import { useRouter } from 'next/router'
 
 const Match = () => {
+  const router = useRouter()
     const handleButtonClick = (buttonType) => {
+	console.log(router.query)
         if (buttonType === '')
             setActiveButton(buttonType);
     };

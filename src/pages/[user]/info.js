@@ -1,10 +1,12 @@
-import Header from '../components/header';
-import Visitas from '../components/visits';
+import Header from '../../components/header';
+import Visitas from '../../components/visits';
 import { useState } from 'react';
 import styles from './info.module.css';
+import { useRouter } from 'next/router'
 
 const Info = () => {
     const [activeButton, setActiveButton] = useState('');
+    const router = useRouter()
 
     // Função para lidar com o clique nos botões
     const handleButtonClick = (buttonType) => {
@@ -34,10 +36,13 @@ const Info = () => {
             </div>;
         } else if (activeButton === 'visitas') {
             return <div className={styles.info_visits}><Visitas /></div>;
+        } else if (activeButton === 'match') {
+            router.replace("/"+ router.query.user +"/match")
+            return
         } else {
             return (
                 <div className={styles.welcome}>
-                    <h2>Bem-vindo(a)!</h2>
+                    <h2>Bem-vindo(a) {router.query.user}!</h2>
                     <p>
                         Selecione uma opção no menu para visualizar seus dados ou suas visitas.
                     </p>
@@ -62,6 +67,11 @@ const Info = () => {
                             className={`${styles['button_info']} ${activeButton === 'visitas' ? 'active' : ''}`}
                             onClick={() => handleButtonClick('visitas')}>
                             Visitas
+                        </button>
+                        <button
+                            className={`${styles['button_info']} ${activeButton === 'match' ? 'active' : ''}`}
+                            onClick={() => handleButtonClick('match')}>
+                            Match
                         </button>
                     </div>
 
