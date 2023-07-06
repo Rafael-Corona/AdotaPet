@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.link {
+    color: var(--white) !important;
+    text-decoration: none !important;
+}
+
+.h1 {
+    font-size: 220%
+}
+
+.h1:hover {
+    color: #0D3B66;
+    transition:all 0.2s;
+}
+
+.icon {
+    font-size: 400%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #0D3B66;
+    transition:all 0.2s;
+}

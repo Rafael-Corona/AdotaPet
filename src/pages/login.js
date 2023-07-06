@@ -1,3 +1,4 @@
+import Header from '../components/header';
 import styles from './login.module.css'
 
 function Login() {
@@ -28,8 +29,10 @@ function Login() {
 	}
 
 	return (
-		<div className={styles.container}>
-			<form onSubmit={handleSubmit} className={styles.login_form}>
+		<div>
+			<Header />
+			<div className={styles.container}>
+				<form onSubmit={handleSubmit} className={styles.login_form}>
 					<div className={styles.text_box}>
 						<label htmlFor="Nome">Nome</label>
 						<input type="text" name="name" required />
@@ -41,7 +44,8 @@ function Login() {
 					</div>
 
 					<button type="submit">Enviar</button>
-			</form>
+				</form>
+			</div>
 		</div>
 	)
 }

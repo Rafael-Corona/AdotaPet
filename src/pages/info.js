@@ -1,3 +1,4 @@
+import Header from '../components/header';
 import { useState } from 'react';
 import styles from './info.module.css';
 
@@ -45,24 +46,28 @@ const Info = () => {
     };
 
     return (
-        <main>
-            <div className={styles.container}>
-                <div id='a'>
-                    <button
-                        className={`${styles['button_info']} ${activeButton === 'dados' ? 'active' : ''}`}
-                        onClick={() => handleButtonClick('dados')}>
-                        Meus dados
-                    </button>
-                    <button
-                        className={`${styles['button_info']} ${activeButton === 'visitas' ? 'active' : ''}`}
-                        onClick={() => handleButtonClick('visitas')}>
-                        Visitas
-                    </button>
-                </div>
+        <div>
+            <Header />
 
-                <div className={styles.info_container}>{renderInfo()}</div>
-            </div>
-        </main>
+            <main>
+                <div className={styles.container}>
+                    <div id='a'>
+                        <button
+                            className={`${styles['button_info']} ${activeButton === 'dados' ? 'active' : ''}`}
+                            onClick={() => handleButtonClick('dados')}>
+                            Meus dados
+                        </button>
+                        <button
+                            className={`${styles['button_info']} ${activeButton === 'visitas' ? 'active' : ''}`}
+                            onClick={() => handleButtonClick('visitas')}>
+                            Visitas
+                        </button>
+                    </div>
+
+                    <div className={styles.info_container}>{renderInfo()}</div>
+                </div>
+            </main>
+        </div>
     );
 };
 
