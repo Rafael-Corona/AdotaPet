@@ -1,4 +1,5 @@
 import Header from '../components/header';
+import Visitas from '../components/visits';
 import { useState } from 'react';
 import styles from './info.module.css';
 
@@ -32,7 +33,7 @@ const Info = () => {
                 </form>
             </div>;
         } else if (activeButton === 'visitas') {
-            return <div>Informações de visitas</div>;
+            return <div className={styles.info_visits}><Visitas /></div>;
         } else {
             return (
                 <div className={styles.welcome}>

@@ -1,0 +1,31 @@
+[
+    {
+      "name": "Totó",
+      "breed": "Vira-Lata",
+      "weight": "15kg",
+      "age": "3 anos",
+      "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.PMvzuUFp77CoO3FZdL1v8gHaF4%26pid%3DApi&f=1&ipt=0bf3c7562222111dec8fa47c591a4a62978835d482b054afd80007f45fc1daf1&ipo=images"
+    },
+    {
+      "name": "Panqueca",
+      "breed": "Bulldog",
+      "weight": "10kg",
+      "age": "6 anos",
+      "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.AtrulG_JjHMOhJXkHVwymAHaFj%26pid%3DApi&f=1&ipt=fc350a6b1abbe0cc0007af93db85cc32dc110d604c1eaa963d4ce7bdb7eb9c60&ipo=images"
+    },
+    {
+      "name": "Filó",
+      "breed": "Shih Tzu",
+      "weight": "7kg",
+      "age": "9 anos",
+      "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.r6y1598sbNxfYkRO7ddyfwHaHQ%26pid%3DApi&f=1&ipt=c3e136ddf56b75882e14b17e54f61fe4167d2dd124c14ad7045144d81b05949c&ipo=images"
+    },
+    {
+      "name": "Chico",
+      "breed": "SRD",
+      "weight": "30kg",
+      "age": "3 anos",
+      "img": "/cachorro.png"
+    }
+  ]
+  
