@@ -1,4 +1,4 @@
-import Header from '../components/header';
+import HomeHeader from '../components/home_header';
 import styles from './login.module.css'
 
 function Login() {
@@ -30,7 +30,7 @@ function Login() {
 
 	return (
 		<div>
-			<Header />
+			<HomeHeader />
 			<div className={styles.container}>
 				<form onSubmit={handleSubmit} className={styles.login_form}>
 					<div className={styles.text_box}>

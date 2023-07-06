@@ -1,4 +1,4 @@
-import Header from '../components/header';
+import HomeHeader from '../components/home_header';
 import styles from './login.module.css'
 import { useState } from "react";
 import { useRouter } from "next/router.js";
@@ -105,7 +105,7 @@ function Cadastro() {
 
     return (
         <div>
-            <Header />
+            <HomeHeader />
 
             <div className={styles.container}>
                 <form action="/" method="POST" onSubmit={(e) => signUpHandler(e)} className={styles.signup_form}>
