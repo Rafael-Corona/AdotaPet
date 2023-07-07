@@ -11,19 +11,6 @@ import {
     Errors,
 } from "./styles.js";
 
-function saveUserData(user) {
-    let users = JSON.parse(localStorage.getItem("userData")) || {};
-
-    users = {
-        ...users,
-        [user.name]: user
-    }
-
-    localStorage.setItem("userData", JSON.stringify(users));
-    console.log(JSON.parse(localStorage.getItem("userData")));
-    
-    router.push("/login"); 
-}
 
 function Cadastro() {
     const router = useRouter();
@@ -72,6 +59,20 @@ function Cadastro() {
         }
 
     }
+
+    function saveUserData(user) {
+    let users = JSON.parse(localStorage.getItem("userData")) || {};
+
+    users = {
+        ...users,
+        [user.name]: user
+    }
+
+    localStorage.setItem("userData", JSON.stringify(users));
+    console.log(JSON.parse(localStorage.getItem("userData")));
+    
+    router.push("/login"); 
+}
 
     //Função para validação dos dados de cadastro
     const validate = (values) => {
