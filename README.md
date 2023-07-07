@@ -17,6 +17,7 @@ Relatório do Projeto:
 * [Comentários adicionais](#comentários-adicionais)  
 
 ## Integrantes
+ - André Kenji Hidaka Matsumoto | Número USP: 12542689
  - Arthur Grillo Queiroz Cabral  | Número USP: 12690500
  - Érica Ribeiro F. dos Santos   | Número USP: 11836351
  - Rafael Corona  |  Número USP: 4769989
