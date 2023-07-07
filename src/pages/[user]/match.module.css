@@ -51,6 +51,12 @@
     background-color: #F4D35E;
 }
 
+.dog_img {
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
+}
+
 .preference:hover {
     background-color: #F4D35E;
 }

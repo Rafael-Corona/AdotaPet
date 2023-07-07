@@ -4,11 +4,25 @@ import { AiOutlineCheck } from "react-icons/ai";
 import { RiCloseLine } from "react-icons/ri";
 import Image from 'next/image';
 import { useRouter } from 'next/router'
+import dogs from '../../../public/dogs.json'
+import React, { useState } from 'react';
 
 const Match = () => {
-  const router = useRouter()
+    console.log(dogs)
+
+    let randomDog = () => {return dogs[Math.floor(Math.random() * dogs.length)]; }
+
+    const [dog, setDog] = useState(randomDog);
+
+    console.log()
+
+    const router = useRouter()
     const handleButtonClick = (buttonType) => {
-	console.log(router.query)
+        let nextDog = randomDog()
+        while (nextDog == dog) {
+            nextDog = randomDog()
+        }
+        setDog(nextDog)
         if (buttonType === '')
             setActiveButton(buttonType);
     };
@@ -30,7 +44,7 @@ const Match = () => {
                             <RiCloseLine />
                         </button>
 
-                        <Image src="/cachorro.png" alt="Cachorro" width={338} height={414} />
+                        <img src={dog.img} alt="Cachorro" className={styles.dog_img}/>
 
                         <button
                             className={styles.selection_button}
