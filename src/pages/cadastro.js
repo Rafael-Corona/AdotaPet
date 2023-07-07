@@ -21,6 +21,8 @@ function saveUserData(user) {
 
     localStorage.setItem("userData", JSON.stringify(users));
     console.log(JSON.parse(localStorage.getItem("userData")));
+    
+    router.push("/login"); 
 }
 
 function Cadastro() {
