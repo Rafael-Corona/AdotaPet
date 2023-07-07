@@ -70,3 +70,18 @@
 	height: 20%;
 	border-radius: 5px;
 }
+
+.carouselContainer {
+    max-width: 70vw; /* Adjust the max-width to your desired value */
+    margin: 20vh auto;
+  }
+  
+  .carousel {
+    max-height: 200px; /* Adjust the max-height to your desired value */
+  }
+  
+  .carouselImage {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  
