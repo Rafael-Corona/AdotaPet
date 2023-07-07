@@ -19,11 +19,9 @@ Relatório do Projeto:
 ## Integrantes
  - André Kenji Hidaka Matsumoto | Número USP: 12542689
  - Arthur Grillo Queiroz Cabral  | Número USP: 12690500
+ - Eduardo Figueiredo | Número USP: 
  - Érica Ribeiro F. dos Santos   | Número USP: 11836351
  - Rafael Corona  |  Número USP: 4769989
- - coloquem o nome e nusp de vcs
- -
- -
  
  ## Descrição do Projeto
 - Neste projeto, vamos implementar um sistema para aproximar pessoas interessadas em adotar animais e o canil municipal de São Carlos. A idea é que, por meio desse sistema, sejam disponibilizadas informações a quem está pensando em adotar um animal para que essas pessoas possam escolher animais que se adaptem ao seu estilo de vida e preferências mais facilmente.
